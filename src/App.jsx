@@ -32,7 +32,7 @@ function App() {
 
   return (
     <div className='app'>
-      <h1 className='todo-list'>My todo list</h1>
+      <h1 className='todo-list'>My Todo list</h1>
       {todos.map((todo, index) => (
         <TodoItem todo={todo} key={index} index={index} completeTodo={completeTodo} />
       ))}
@@ -40,6 +40,12 @@ function App() {
     </div>
   );
 }
+const removeTodo = (index) => {
+  const newTodos = [...todos];
+  newTodos.splice(index, 1);
+  setTodos(newTodos);
+};
+
 
 export default App;
 

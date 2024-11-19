@@ -11,3 +11,7 @@ justify-content: space-between;
 .complete {
 text-decoration: line-through;
 }
+
+button {
+    align-content: center;
+}
