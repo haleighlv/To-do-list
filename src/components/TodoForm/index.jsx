@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 
-function ToDoForm(props) {
+function TodoForm(props) {
     const [value, setValue] = useState("")
 
     const handleSubmit = (event) => {
@@ -26,4 +26,4 @@ function ToDoForm(props) {
     
 }
 
-export default ToDoForm
+export default TodoForm
