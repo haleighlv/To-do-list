@@ -1,7 +1,12 @@
 .app {
-background: #6b469a;
+background: hotpink;
 padding: 50px;
 height: 300px;
+border-radius: 50px;
+text-align: center;
+margin: auto;
+width: 80%;
+padding-top: 20px;
 }
 
 .todo-list {

@@ -14,4 +14,13 @@ function TodoItem(props) {
     );
 }
 
-export default TodoItem;
+function removeTodo(props) {
+    <div className={`todo ${props.todo.isCompleted ? "complete" : ""}`}>
+        {props.todo.text}
+        <div>
+            <button onClick={() => props.removeTodo(props.index)}>x</button>
+        </div>
+    </div>
+}
+
+    export default TodoItem;
